@@ -48,8 +48,34 @@
 
 	var _Object$defineProperties = __webpack_require__(1)['default'];
 
-	var $ = __webpack_require__(4);
-	var shake = __webpack_require__(5);
+	(function () {
+	    var query = parse(location.search.substring(1));
+	    var appid = 'wx682926e9be5cf5c5';
+	    if (!query['openid'] || !query['access_token']) location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + appid + '&redirect_uri='
+	    // @todo change url here
+	     + 'http://wx.wine-dynasty.com/mjcq/proxy.html?url=' + encodeURIComponent(location.href) + '&response_type=code&scope=snsapi_userinfo&state=0#wechat_redirect';
+
+	    function parse(s) {
+	        if (!s) return {};
+	        var o = {};
+	        s.split('&').forEach(function (el) {
+	            o[el.split('=')[0]] = el.split('=')[1];
+	        });
+	        return o;
+	    }
+	})();
+
+	var query = __webpack_require__(4)(location.search.substring(1));
+	var access_token = query.access_token;
+	var openid = query.openid;
+
+	// GET method
+	var lotteryUrl = 'http://xinzhongzhu.ga:13000/lottery';
+	// GET method
+	var userInfoUrl = 'http://xinzhongzhu.ga:12000/userinfo';
+
+	var $ = __webpack_require__(5);
+	var shake = __webpack_require__(6);
 	var fadeInTimeout = 500;
 	var fadeOutTimeout = 500;
 	var cssTable = [[2, 1, 0], [1, 0, 2], [2, 1, 0], [2, 0, 1], [2, 0, 1], [1, 0, 2]];
@@ -81,7 +107,7 @@
 	    }
 	});
 
-	__webpack_require__(6)(function () {
+	__webpack_require__(7)(function () {
 	    store.index = 0;
 	});
 
@@ -122,7 +148,8 @@
 
 	// $(document).on('touchend', '.ed-cj', lottery);
 
-	$(document).on('touchend', '.libao-nxt', form);
+	// $(document).on('touchend', '.libao-nxt', form);
+
 	function closeTip(pt) {
 	    pt.hide();
 	}
@@ -136,6 +163,9 @@
 	    // 抽奖
 	    // $.get...
 	    // @todo
+	    $.get(lotteryUrl, {
+	        openid: openid
+	    }, null, 'json').done(function (data) {});
 	    p($('.ed', c), $(res(0)));
 	}
 
@@ -225,10 +255,25 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	module.exports = jQuery;
+	'use strict';
+
+	module.exports = function (s) {
+	    if (!s) return {};
+	    var o = {};
+	    s.split('&').forEach(function (el) {
+	        o[el.split('=')[0]] = el.split('=')[1];
+	    });
+	    return o;
+	};
 
 /***/ },
 /* 5 */
+/***/ function(module, exports) {
+
+	module.exports = jQuery;
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -246,9 +291,6 @@
 	if (window.DeviceMotionEvent) {
 	    // 判断设备标准javascript是否支持加速度API
 	    window.addEventListener('devicemotion', deviceMotionHandler, false);
-	} else {
-	    // 如果不支持则判断是否扩展该功能(这个是cordova的扩展方法，其他扩展可以自己再加判断)
-	    alert('您的手机不支持"摇一摇"功能');
 	}
 
 	function deviceMotionHandler(eventData) {
@@ -282,7 +324,7 @@
 	};
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';

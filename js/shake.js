@@ -5,8 +5,6 @@ var watchId;
 var l = [];
 if (window.DeviceMotionEvent) {// 判断设备标准javascript是否支持加速度API
     window.addEventListener('devicemotion', deviceMotionHandler, false);
-} else { // 如果不支持则判断是否扩展该功能(这个是cordova的扩展方法，其他扩展可以自己再加判断)
-    alert('您的手机不支持"摇一摇"功能');
 }
 
 function deviceMotionHandler(eventData) {

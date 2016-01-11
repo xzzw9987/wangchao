@@ -1,3 +1,32 @@
+(function () {
+    var query = parse(location.search.substring(1));
+    var appid = 'wx682926e9be5cf5c5';
+    if (!query['openid'] || !query['access_token'])
+        location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='
+            + appid
+            + '&redirect_uri='
+                // @todo change url here
+            + 'http://wx.wine-dynasty.com/mjcq/proxy.html?url=' + encodeURIComponent(location.href)
+            + '&response_type=code&scope=snsapi_userinfo&state=0#wechat_redirect';
+
+    function parse(s) {
+        if (!s)
+            return {};
+        var o = {};
+        s.split('&').forEach(function (el) {
+            o[el.split('=')[0]] = el.split('=')[1];
+        });
+        return o;
+    }
+})();
+
+var query = require('./query')(location.search.substring(1));
+var {access_token,openid} = query;
+// GET method
+var lotteryUrl = 'http://xinzhongzhu.ga:13000/lottery';
+// GET method
+var userInfoUrl = 'http://xinzhongzhu.ga:12000/userinfo';
+
 var $ = require('jquery');
 var shake = require('./shake');
 var fadeInTimeout = 500;
@@ -81,7 +110,8 @@ $(document).on('touchend', '.close-tip-btn', function () {
 
 // $(document).on('touchend', '.ed-cj', lottery);
 
-$(document).on('touchend', '.libao-nxt', form);
+// $(document).on('touchend', '.libao-nxt', form);
+
 function closeTip(pt) {
     pt.hide();
 }
@@ -95,6 +125,12 @@ function lottery() {
     // 抽奖
     // $.get...
     // @todo
+    $.get(lotteryUrl, {
+            openid: openid
+        }, null, 'json')
+        .done((data)=> {
+
+        });
     p($('.ed', c), $(res(0)));
 }
 

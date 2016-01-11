@@ -6,7 +6,7 @@ module.exports = function () {
             + appid
             + '&redirect_uri='
                 // @todo change url here
-            + 'http://' + location.hostname + '/publicwangchao/proxy.html?url=' + encodeURIComponent(location.href)
+            + 'http://wx.wine-dynasty.com/mjcq/proxy.html?url=' + encodeURIComponent(location.href)
             + '&response_type=code&scope=snsapi_userinfo&state=0#wechat_redirect';
 
     function parse(s) {
