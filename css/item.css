@@ -1,0 +1,222 @@
+
+div[data-pg="1"] .d-pic {
+    background-position: 0 0;
+}
+
+div[data-pg="2"] .d-pic {
+    background-position: 0 -520px;
+}
+
+div[data-pg="3"] .d-pic {
+    background-position: 0 -1050px;
+}
+
+div[data-pg="4"] .d-pic {
+    background-position: 0 -1626px;
+}
+
+div[data-pg="5"] .d-pic {
+    background-position: 0 -2180px;
+}
+
+div[data-pg="6"] .d-pic {
+    background-position: 0 -2710px;
+}
+
+div[data-pg="1"] .q {
+    background-position: 0 -385px;
+}
+
+div[data-pg="2"] .q {
+    background-position: 0 -915px;
+}
+
+div[data-pg="3"] .q {
+    background-position: 0 -1437px;
+}
+
+div[data-pg="4"] .q {
+    background-position: 0 -2016px;
+}
+
+div[data-pg="5"] .q {
+    background-position: 0 -2590px;
+}
+
+div[data-pg="6"] .q {
+    background-position: 0 -3165px;
+}
+
+div[data-pg="1"] .opt {
+    background-position: 0 0;
+}
+
+div[data-pg="2"] .opt {
+    background-position: 0 -280px;
+}
+
+div[data-pg="3"] .opt {
+    background-position: 0 -568px;
+}
+
+div[data-pg="4"] .opt {
+    background-position: 0 -860px;
+}
+
+div[data-pg="5"] .opt {
+    background-position: 0 -1148px;
+}
+
+div[data-pg="6"] .opt {
+    background-position: 0 -1440px;
+}
+
+div[data-pg="1"] .ans-0 .ans-content{
+    background-position: 0px 0px;
+    height: 480px;
+}
+
+div[data-pg="1"] .ans-1 .ans-content{
+    background-position: -500px -10px;
+}
+
+div[data-pg="1"] .ans-2 .ans-content{
+    background-position: -1000px -10px;
+}
+
+div[data-pg="2"] .ans-0 .ans-content{
+    background-position: 0px -550px;
+    height: 480px;
+}
+
+div[data-pg="2"] .ans-1 .ans-content{
+    background-position: -500px -570px;
+}
+
+div[data-pg="2"] .ans-2 .ans-content{
+    background-position: -1000px -570px;
+}
+
+div[data-pg="3"] .ans-0 .ans-content{
+    background-position: 0px -1088px;
+    height: 480px;
+}
+
+div[data-pg="3"] .ans-1 .ans-content{
+    background-position: -500px -1100px;
+}
+
+div[data-pg="3"] .ans-2 .ans-content{
+    background-position: -1000px -1100px;
+}
+
+div[data-pg="4"] .ans-0 .ans-content{
+    background-position: 0px -1616px;
+    height: 480px;
+}
+
+div[data-pg="4"] .ans-1 .ans-content{
+    background-position: -500px -1626px;
+}
+
+div[data-pg="4"] .ans-2 .ans-content{
+    background-position: -1000px -1626px;
+}
+
+div[data-pg="5"] .ans-0 .ans-content{
+    background-position: 0px -2164px;
+    height: 480px;
+}
+
+div[data-pg="5"] .ans-1 .ans-content{
+    background-position: -500px -2178px;
+}
+
+div[data-pg="5"] .ans-2 .ans-content{
+    background-position: -1000px -2178px;
+}
+
+div[data-pg="6"] .ans-0 .ans-content{
+    background-position: 0px -2750px;
+    height: 480px;
+}
+
+div[data-pg="6"] .ans-1 .ans-content{
+    background-position: -500px -2712px;
+}
+
+div[data-pg="6"] .ans-2 .ans-content{
+    background-position: -1000px -2712px;
+}
+
+div[data-pg="1"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="1"] .ans-1 .ans-content{
+    background-position-x: -530px;
+}
+
+div[data-pg="1"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
+
+div[data-pg="2"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="2"] .ans-1 .ans-content{
+    background-position-x: -530px;
+}
+
+div[data-pg="2"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
+
+div[data-pg="3"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="3"] .ans-1 .ans-content{
+    background-position-x: -530px;
+}
+
+div[data-pg="3"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
+
+div[data-pg="4"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="4"] .ans-1 .ans-content{
+    background-position-x: -530px;
+}
+
+div[data-pg="4"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
+
+div[data-pg="5"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="5"] .ans-1 .ans-content{
+    background-position-x: -530px;
+}
+
+div[data-pg="5"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
+
+div[data-pg="6"] .ans-0 .ans-content{
+    background-position-x: 0px;
+}
+
+div[data-pg="6"] .ans-1 .ans-content{
+    background-position-x: -520px;
+}
+
+div[data-pg="6"] .ans-2 .ans-content{
+    background-position-x: -1060px;
+}
