@@ -334,7 +334,7 @@
 
 	setTimeout(function () {
 	    load(0);
-	}, 3000);
+	}, 5000);
 
 	module.exports = function (d) {
 	    ready = d;
