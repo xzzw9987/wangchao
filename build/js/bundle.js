@@ -95,9 +95,9 @@
 	});
 
 	var video = {
-	    '2': './video/wendu.mp4',
-	    '3': './video/guabei.mp4',
-	    '4': './video/aocao.mp4'
+	    '2': 'http://xinzhongzhu.ga/publicwangchao/video/wendu.mp4',
+	    '3': 'http://xinzhongzhu.ga/publicwangchao/video/guabei.mp4',
+	    '4': 'http://xinzhongzhu.ga/publicwangchao/video/aocao.mp4'
 	};
 
 	$(document).on('touchend', '.st-btn', function () {
