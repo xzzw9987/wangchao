@@ -190,7 +190,7 @@ function res(d) {
             return `
                 <div class="z zj1">
                     <div class="logo"></div>
-                    <div style="position: absolute;left: 100px;height: 100px;font-size: 30px;color: #a60006;">
+                    <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">
                         中奖编码: ${d.randomCode}
                     </div>
                     <img src="./erweima.jpg" width="163" height="163" style="position: absolute;left: 240px;top: 490px;;">
