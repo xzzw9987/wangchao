@@ -245,7 +245,7 @@
 	$(document).on('touchend', '.rl-btn', function () {
 	    $('.rules').toggle();
 	});
-	alert('debug mode');
+	alert('debug');
 	wx.ready(function () {
 
 	    wx.onMenuShareTimeline({
