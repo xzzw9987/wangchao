@@ -239,16 +239,19 @@
 	    $('.fenxiang').toggle();
 	});
 
-	wx.onMenuShareTimeline({
-	    title: '王朝', // 分享标题
-	    link: 'http://wx.wine-dynasty.com/mjcq/index.html', // 分享链接
-	    imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
-	    success: function success() {
-	        // 用户确认分享后执行的回调函数
-	    },
-	    cancel: function cancel() {
-	        // 用户取消分享后执行的回调函数
-	    }
+	wx.ready(function () {
+
+	    wx.onMenuShareTimeline({
+	        title: '王朝', // 分享标题
+	        link: 'http://wx.wine-dynasty.com/mjcq/index.html', // 分享链接
+	        imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
+	        success: function success() {
+	            // 用户确认分享后执行的回调函数
+	        },
+	        cancel: function cancel() {
+	            // 用户取消分享后执行的回调函数
+	        }
+	    });
 	});
 
 /***/ },
