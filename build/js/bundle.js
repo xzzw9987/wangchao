@@ -216,7 +216,7 @@
 	            return '\n                <div class="z nzj">\n                    <div class="logo"></div>\n                    <div class="share"></div>\n                </div>\n            ';
 	        case 1:
 	            // libao
-	            return '\n                <div class="z zj1">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">\n                        中奖编码: ' + d.randomCode + '\n                    </div>\n                    <img src="./erweima.jpg" width="163" height="163" style="position: absolute;left: 240px;top: 490px;;">\n                    <div class="share"></div>\n                </div>\n            ';
+	            return '\n                <div class="z zj1">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">\n                        中奖编码: ' + d.randomCode + '\n                    </div>\n                    <img src="./erweima.png" width="640">\n                    <div class="share"></div>\n                </div>\n            ';
 	        case 2:
 	            // hongbao
 	            return '\n                <div class="z zj2 ">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 112px;top: 270px;font-size: 30px;color: #a60006;">\n                        王朝 ' + d.size + ' 元红包已存入账户\n                    </div>\n                    <div class="share"></div>\n                </div>\n            ';

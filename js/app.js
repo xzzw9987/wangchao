@@ -193,7 +193,7 @@ function res(d) {
                     <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">
                         中奖编码: ${d.randomCode}
                     </div>
-                    <img src="./erweima.jpg" width="163" height="163" style="position: absolute;left: 240px;top: 490px;;">
+                    <img src="./erweima.png" width="640">
                     <div class="share"></div>
                 </div>
             `;
