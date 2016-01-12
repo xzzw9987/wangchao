@@ -176,7 +176,6 @@ function cj() {
 
 function res(d) {
     var {type} = d;
-    alert(JSON.stringify(d));
     // 根据 type  不同获奖信息, 获取不同模版
     switch (type) {
         case 0:
