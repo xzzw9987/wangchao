@@ -108,9 +108,18 @@ function lottery() {
             access_token: access_token
         }, null, 'json')
         .done((data)=> {
-            alert(JSON.stringify(data));
+            if (data['award'] === 1) {
+                if (data['awardName'] === '王朝春节礼包') {
+                    p($('.ed', c), $(res(Object.assign(data, {type: 1}))));
+                }
+                if (data['awardName'] === '红包') {
+                    p($('.ed', c), $(res(Object.assign(data, {type: 2}))));
+                }
+            }
+            else {
+                p($('.ed', c), $(res(Object.assign(data, {type: 0}))));
+            }
         });
-    p($('.ed', c), $(res(0)));
 }
 
 function form() {
@@ -145,8 +154,18 @@ function idx() {
 }
 
 function cj() {
+    function once(foo) {
+        var done = false;
+        return function () {
+            if (!done)
+                foo();
+            done = true;
+        }
+    }
+
+    var f = once(lottery);
     shake(function () {
-        lottery();
+        f();
     });
     return `
         <div class="ed">
@@ -155,14 +174,38 @@ function cj() {
     `;
 }
 
-function res(type) {
+function res(d) {
+    var {type} = d;
     // 根据 type  不同获奖信息, 获取不同模版
     switch (type) {
         case 0:
             return `
-                <div class="libao">
+                <div class="z nzj">
                     <div class="logo"></div>
-                    <div class="libao-nxt"></div>
+                    <div class="share"></div>
+                </div>
+            `;
+        case 1:
+            // libao
+            return `
+                <div class="z zj1">
+                    <div class="logo"></div>
+                    <div style="position: absolute;left: 100px;height: 100px;font-size: 30px;color: #a60006;">
+                        中奖编码: ${d.randomCode}
+                    </div>
+                    <img src="./erweima.jpg" width="163" height="163" style="position: absolute;left: 240px;top: 490px;;">
+                    <div class="share"></div>
+                </div>
+            `;
+        case 2:
+            // hongbao
+            return `
+                <div class="z zj2 ">
+                    <div class="logo"></div>
+                    <div style="position: absolute;left: 112px;top: 270px;font-size: 30px;color: #a60006;">
+                        王朝 ${d.size} 元红包已存入账户
+                    </div>
+                    <div class="share"></div>
                 </div>
             `;
     }
@@ -201,3 +244,12 @@ function pgTpl(index, res) {
         </div>
     </div>`;
 }
+
+$('.fenxiang').on('click', function () {
+    $(this).toggle();
+});
+
+
+$('.share').on('click', function () {
+    $('.fenxiang').toggle();
+});

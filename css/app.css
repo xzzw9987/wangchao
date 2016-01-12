@@ -208,6 +208,41 @@ html, body {
     font-size: 30px;
 }
 
+.z {
+    background-position: center 160px;
+    background-repeat: no-repeat;
+}
+
+.nzj {
+    background-image: url("./nzj.png");
+
+}
+
+.zj1 {
+    background-image: url("./zj1.png");
+}
+
+.zj2 {
+    background-image: url("./zj2.png");
+
+}
+
+.share {
+    position: absolute;
+    top: 660px;
+    left: 170px;
+    width: 310px;
+    height: 100px;
+}
+
+.zj1 .share {
+    top: 750px;
+}
+
+.nzj .share {
+    top: 570px;
+}
+
 @media screen and (max-height: 959px) {
     .c > div {
         top: -70px;
