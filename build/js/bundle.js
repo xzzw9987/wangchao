@@ -242,7 +242,7 @@
 	wx.ready(function () {
 
 	    wx.onMenuShareTimeline({
-	        title: '王朝', // 分享标题
+	        title: '王朝酒业', // 分享标题
 	        link: 'http://wx.wine-dynasty.com/mjcq/index.html', // 分享链接
 	        imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
 	        success: function success() {
