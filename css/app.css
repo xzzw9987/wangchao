@@ -86,13 +86,13 @@ html, body {
 }
 
 .c .in {
-    /*  animation: fade-in .5s;
-      animation-fill-mode: both;*/
+    animation: fade-in .5s;
+    animation-fill-mode: both;
 }
 
 .c .out {
-    /* animation: fade-out .5s;
-     animation-fill-mode: both;*/
+    animation: fade-out .5s;
+    animation-fill-mode: both;
 }
 
 .q {
@@ -150,7 +150,7 @@ html, body {
 }
 
 .i {
-    /*animation: fade-in .2s;*/
+    animation: fade-in .2s;
 }
 
 .ans-btn {
