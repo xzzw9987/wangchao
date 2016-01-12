@@ -104,10 +104,11 @@ function lottery() {
     // $.get...
     // @todo
     $.get(lotteryUrl, {
-            openid: openid
+            openid: openid,
+            access_token: access_token
         }, null, 'json')
         .done((data)=> {
-
+            alert(JSON.stringify(data));
         });
     p($('.ed', c), $(res(0)));
 }
