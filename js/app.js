@@ -260,7 +260,7 @@ $(document).on('touchend', '.s-hint', function () {
 $(document).on('touchend', '.rl-btn', function () {
     $('.rules').toggle();
 });
-
+alert('debug mode');
 wx.ready(function () {
 
     wx.onMenuShareTimeline({
