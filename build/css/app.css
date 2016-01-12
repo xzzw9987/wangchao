@@ -53,7 +53,8 @@ html, body {
     width: 640px;
     height: 100%;
     overflow: hidden;
-    background: url("./bg.jpg") 0 0 /100% 100%;
+    background: url("./bg.jpg") 0 0;
+    background-size: 100% 100%;
 }
 
 .c > div {
@@ -72,7 +73,8 @@ html, body {
 }
 
 [data-pg="0"] {
-    background: url("./index.png") 0 -120px / 100% no-repeat
+    background: url("./index.png") no-repeat;
+    background-size: 100% auto;
 }
 
 [data-pg="0"] .rl-btn,
