@@ -104,17 +104,13 @@ html, body {
 }
 
 .c .in {
-    -webkit-animation: fade-in .5s;
-    animation: fade-in .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    /*  animation: fade-in .5s;
+      animation-fill-mode: both;*/
 }
 
 .c .out {
-    -webkit-animation: fade-out .5s;
-    animation: fade-out .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    /* animation: fade-out .5s;
+     animation-fill-mode: both;*/
 }
 
 .q {
@@ -173,8 +169,7 @@ html, body {
 }
 
 .i {
-    -webkit-animation: fade-in .2s;
-    animation: fade-in .2s;
+    /*animation: fade-in .2s;*/
 }
 
 .ans-btn {
