@@ -238,6 +238,13 @@
 	$(document).on('touchend', '.share', function () {
 	    $('.fenxiang').toggle();
 	});
+	$(document).on('touchend', '.s-hint', function () {
+	    $(this).parents('.rules').toggle();
+	});
+
+	$(document).on('touchend', '.rl-btn', function () {
+	    $('.rules').toggle();
+	});
 
 	wx.ready(function () {
 

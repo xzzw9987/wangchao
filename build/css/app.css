@@ -233,6 +233,7 @@ html, body {
 
 .nzj {
     background-image: url("./nzj.png");
+    background-position: center 190px;
 
 }
 
@@ -258,7 +259,7 @@ html, body {
 }
 
 .nzj .share {
-    top: 570px;
+    top: 600px;
 }
 
 @media screen and (max-height: 959px) {
