@@ -1,7 +1,7 @@
 var query = require('./query')(location.search.substring(1));
 var {access_token,openid} = query;
 // GET method
-var lotteryUrl = 'http://xinzhongzhu.ga:13000/lottery';
+var setLotteryUrl = 'http://xinzhongzhu.ga:13000/setlottery';
 // GET method
 var userInfoUrl = 'http://xinzhongzhu.ga:12000/userinfo';
 
@@ -103,7 +103,7 @@ function lottery() {
     // 抽奖
     // $.get...
     // @todo
-    $.get(lotteryUrl, {
+    $.get(setLotteryUrl, {
             openid: openid,
             access_token: access_token
         }, null, 'json')
