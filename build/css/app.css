@@ -104,13 +104,17 @@ html, body {
 }
 
 .c .in {
-    /*animation: fade-in .5s;
-    animation-fill-mode: both;*/
+    -webkit-animation: fade-in .5s;
+    animation: fade-in .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .c .out {
-    /*animation: fade-out .5s;
-    animation-fill-mode: both;*/
+    -webkit-animation: fade-out .5s;
+    animation: fade-out .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .q {
@@ -135,6 +139,7 @@ html, body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: url("./answer-bg.png") no-repeat;
+    z-index: 1000;
 }
 
 .ans-0 {
@@ -158,6 +163,7 @@ html, body {
     top: 0;
     background: #000000;
     opacity: .4;
+    z-index: 999;
 }
 
 .opt > div {
@@ -167,7 +173,8 @@ html, body {
 }
 
 .i {
-    /*animation: fade-in .2s;*/
+    -webkit-animation: fade-in .2s;
+    animation: fade-in .2s;
 }
 
 .ans-btn {
