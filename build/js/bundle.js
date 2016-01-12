@@ -210,6 +210,7 @@
 	function res(d) {
 	    var type = d.type;
 
+	    alert(JSON.stringify(d));
 	    // 根据 type  不同获奖信息, 获取不同模版
 	    switch (type) {
 	        case 0:
@@ -231,11 +232,11 @@
 	    return '\n    <div data-pg="' + index + '">\n        <div class="logo"></div>\n        <div class="d-pic"></div>\n        <div class="q"></div>\n        <div class="opt">\n            <div data-res="ans-' + res[0] + '"></div>\n            <div data-res="ans-' + res[1] + '"></div>\n            <div data-res="ans-' + res[2] + '"></div>\n        </div>\n        <div class="i" style="display: none">\n            <div class="cv"></div>\n            <div class="ans">\n            <div style="width: 100%;height: 100%" class="ans-content">\n                <div class="ans-btn"></div>\n                <div class="close-tip-btn"></div>\n            </div>\n            </div>\n        </div>\n    </div>';
 	}
 
-	$('.fenxiang').on('click', function () {
+	$('.fenxiang').on('touchend', function () {
 	    $(this).toggle();
 	});
 
-	$('.share').on('click', function () {
+	$(document).on('touchend', '.share', function () {
 	    $('.fenxiang').toggle();
 	});
 

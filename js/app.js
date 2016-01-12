@@ -176,6 +176,7 @@ function cj() {
 
 function res(d) {
     var {type} = d;
+    alert(JSON.stringify(d));
     // 根据 type  不同获奖信息, 获取不同模版
     switch (type) {
         case 0:
@@ -245,11 +246,11 @@ function pgTpl(index, res) {
     </div>`;
 }
 
-$('.fenxiang').on('click', function () {
+$('.fenxiang').on('touchend', function () {
     $(this).toggle();
 });
 
 
-$('.share').on('click', function () {
+$(document).on('touchend', '.share', function () {
     $('.fenxiang').toggle();
 });
