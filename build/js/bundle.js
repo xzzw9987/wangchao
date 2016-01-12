@@ -53,7 +53,7 @@
 	var openid = query.openid;
 
 	// GET method
-	var lotteryUrl = 'http://xinzhongzhu.ga:13000/lottery';
+	var setLotteryUrl = 'http://xinzhongzhu.ga:13000/setlottery';
 	// GET method
 	var userInfoUrl = 'http://xinzhongzhu.ga:12000/userinfo';
 
@@ -146,9 +146,12 @@
 	    // 抽奖
 	    // $.get...
 	    // @todo
-	    $.get(lotteryUrl, {
-	        openid: openid
-	    }, null, 'json').done(function (data) {});
+	    $.get(setLotteryUrl, {
+	        openid: openid,
+	        access_token: access_token
+	    }, null, 'json').done(function (data) {
+	        alert(JSON.stringify(data));
+	    });
 	    p($('.ed', c), $(res(0)));
 	}
 
