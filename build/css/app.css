@@ -75,6 +75,7 @@ html, body {
 [data-pg="0"] {
     background: url("./index.png") no-repeat;
     background-size: 100% auto;
+    background-position: 0 -146px;
 }
 
 [data-pg="0"] .rl-btn,
@@ -83,14 +84,14 @@ html, body {
 }
 
 [data-pg="0"] .rl-btn {
-    top: 740px;
+    top: 590px;
     left: 270px;
     width: 116px;
     height: 50px;
 }
 
 [data-pg="0"] .st-btn {
-    top: 875px;
+    top: 730px;
     left: 140px;
     width: 360px;
     height: 94px;
