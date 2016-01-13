@@ -255,7 +255,7 @@
 
 	    wx.onMenuShareTimeline({
 	        title: '王朝酒业', // 分享标题
-	        link: 'http://wx.wine-dynasty.com/mjcq/index.html', // 分享链接
+	        link: 'http://wx.wine-dynasty.com/mjcq/share.html', // 分享链接
 	        imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
 	        success: function success() {
 	            // 用户确认分享后执行的回调函数
@@ -268,7 +268,7 @@
 	    wx.onMenuShareAppMessage({
 	        title: '王朝酒业', // 分享标题
 	        desc: '王朝酒业', // 分享描述
-	        link: 'http://wx.wine-dynasty.com/mjcq/index.html', // 分享链接
+	        link: 'http://wx.wine-dynasty.com/mjcq/share.html', // 分享链接
 	        imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
 	        type: 'link', // 分享类型,music、video或link，不填默认为link
 	        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
