@@ -157,16 +157,19 @@ function cj() {
     function once(foo) {
         var done = false;
         return function () {
-            if (!done)
+            if (!done) {
                 foo();
+            }
             done = true;
         }
     }
 
-    var f = once(lottery);
+    var f = once(function () {
+        lottery();
+        $('#adu')[0].play();
+    });
     shake(function () {
         f();
-        $('#adu')[0].play();
     });
     return `
         <div class="ed">
