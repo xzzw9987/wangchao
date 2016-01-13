@@ -166,6 +166,7 @@ function cj() {
     var f = once(lottery);
     shake(function () {
         f();
+        $('#adu')[0].play();
     });
     return `
         <div class="ed">

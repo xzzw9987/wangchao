@@ -203,6 +203,7 @@
 	    var f = once(lottery);
 	    shake(function () {
 	        f();
+	        $('#adu')[0].play();
 	    });
 	    return '\n        <div class="ed">\n            <div class="logo"></div>\n        </div>\n    ';
 	}
