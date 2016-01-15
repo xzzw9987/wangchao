@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>王朝酒业</title>
-    <meta name="viewport" content="width=640,user-scalable=no">
+    <meta name="viewport">
     <link rel="stylesheet" href="./build/css/app.css">
     <link rel="stylesheet" href="./build/css/item.css">
     <script>
@@ -29,22 +29,31 @@
             }
         })();
     </script>
+
+
     <script>
         (function () {
             // reset meta viewport
             var match,
                     scale,
                     TARGET_WIDTH = 640;
-
+            var normalSet = function () {
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + TARGET_WIDTH + ',user-scalable=no');
+            };
             if (match = navigator.userAgent.match(/Android (\d+\.\d+)/)) {
                 if (parseFloat(match[1]) < 4.4) {
                     if (TARGET_WIDTH == 320) TARGET_WIDTH++;
                     var scale = window.screen.width / TARGET_WIDTH;
                     document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + TARGET_WIDTH + ', initial-scale=' + scale + ', minimum-scale=' + scale + ', maximum-scale=' + scale + ', target-densitydpi=device-dpi');
                 }
+                else {
+                    normalSet();
+                }
             }
-
-        })()
+            else {
+                normalSet();
+            }
+        })();
     </script>
     <script src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
     <script>
