@@ -11,16 +11,17 @@ var fadeInTimeout = 500;
 var fadeOutTimeout = 500;
 var cssTable = [
     [2, 1, 0],
+    [2, 0, 1],
+    [2, 1, 0],
+    [1, 0, 2],
     [1, 0, 2],
     [2, 1, 0],
-    [2, 0, 1],
-    [2, 0, 1],
     [1, 0, 2]
 ];
 
 var c = $('.c');
 var store = {
-    maxIndex: 6,
+    maxIndex: 7,
     get index() {
         return this._index || 0;
     },
@@ -62,7 +63,7 @@ $(document).on('touchend', '.st-btn', function () {
 });
 
 $(document).on('touchend', '[data-res]', function (e) {
-    if ($(this).parents('[data-pg]').data('pg') == '6' && $(this).data('res') == 'ans-0') {
+    if ($(this).parents('[data-pg]').data('pg') == ('' + store.maxIndex) && $(this).data('res') == 'ans-0') {
         store.index++;
         return;
     }
@@ -194,7 +195,7 @@ function res(d) {
             return `
                 <div class="z zj1">
                     <div class="logo"></div>
-                    <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">
+                    <div style="position: absolute;left: 150px;top: 240px;font-size: 30px;color: #a60006;">
                         中奖编码: ${d.randomCode}
                     </div>
                     <img src="./erweima.png" width="640">
@@ -206,9 +207,10 @@ function res(d) {
             return `
                 <div class="z zj2 ">
                     <div class="logo"></div>
-                    <div style="position: absolute;left: 112px;top: 270px;font-size: 30px;color: #a60006;">
-                        王朝 ${d.size} 元红包已存入账户
+                    <div style="position: absolute;left: 112px;top: 220px;font-size: 30px;color: #a60006;">
+                        恭喜${d.size}元红包已存入账户!
                     </div>
+                    <img src="./erweima.png" width="640">
                     <div class="share"></div>
                 </div>
             `;

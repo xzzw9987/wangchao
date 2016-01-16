@@ -63,11 +63,11 @@
 	var shake = __webpack_require__(18);
 	var fadeInTimeout = 500;
 	var fadeOutTimeout = 500;
-	var cssTable = [[2, 1, 0], [1, 0, 2], [2, 1, 0], [2, 0, 1], [2, 0, 1], [1, 0, 2]];
+	var cssTable = [[2, 1, 0], [2, 0, 1], [2, 1, 0], [1, 0, 2], [1, 0, 2], [2, 1, 0], [1, 0, 2]];
 
 	var c = $('.c');
 	var store = _Object$defineProperties({
-	    maxIndex: 6
+	    maxIndex: 7
 	}, {
 	    index: {
 	        get: function get() {
@@ -107,7 +107,7 @@
 	});
 
 	$(document).on('touchend', '[data-res]', function (e) {
-	    if ($(this).parents('[data-pg]').data('pg') == '6' && $(this).data('res') == 'ans-0') {
+	    if ($(this).parents('[data-pg]').data('pg') == '' + store.maxIndex && $(this).data('res') == 'ans-0') {
 	        store.index++;
 	        return;
 	    }
@@ -221,10 +221,10 @@
 	            return '\n                <div class="z nzj">\n                    <div class="logo"></div>\n                    <div class="share"></div>\n                </div>\n            ';
 	        case 1:
 	            // libao
-	            return '\n                <div class="z zj1">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 150px;top: 322px;font-size: 30px;color: #a60006;">\n                        中奖编码: ' + d.randomCode + '\n                    </div>\n                    <img src="./erweima.png" width="640">\n                    <div class="share"></div>\n                </div>\n            ';
+	            return '\n                <div class="z zj1">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 150px;top: 240px;font-size: 30px;color: #a60006;">\n                        中奖编码: ' + d.randomCode + '\n                    </div>\n                    <img src="./erweima.png" width="640">\n                    <div class="share"></div>\n                </div>\n            ';
 	        case 2:
 	            // hongbao
-	            return '\n                <div class="z zj2 ">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 112px;top: 270px;font-size: 30px;color: #a60006;">\n                        王朝 ' + d.size + ' 元红包已存入账户\n                    </div>\n                    <div class="share"></div>\n                </div>\n            ';
+	            return '\n                <div class="z zj2 ">\n                    <div class="logo"></div>\n                    <div style="position: absolute;left: 112px;top: 220px;font-size: 30px;color: #a60006;">\n                        恭喜' + d.size + '元红包已存入账户!\n                    </div>\n                    <img src="./erweima.png" width="640">\n                    <div class="share"></div>\n                </div>\n            ';
 	    }
 	}
 

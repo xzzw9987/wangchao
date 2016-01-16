@@ -101,7 +101,7 @@ html, body {
     position: absolute;
     top: 160px;
     left: 70px;
-    width: 516px;
+    width: 536px;
     height: 345px;
     background: url("./desc.png") no-repeat;
 }
@@ -127,7 +127,7 @@ html, body {
 }
 
 .opt {
-    top: 630px;
+    top: 660px;
     left: 60px;
     height: 270px;
     background: url("./options.png") no-repeat 0 -220px;
@@ -135,7 +135,7 @@ html, body {
 
 .ans {
     width: 490px;
-    height: 256px;
+    height: 340px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -146,7 +146,7 @@ html, body {
 }
 
 .ans-0 {
-    height: 482px;
+    height: 512px;
     background-position: -6px 0;
 }
 
@@ -260,19 +260,20 @@ html, body {
 
 .zj2 {
     background-image: url("./zj2.png");
+    background-position: center 500px;
 
 }
 
 .share {
     position: absolute;
-    top: 660px;
+    top: 640px;
     left: 170px;
     width: 310px;
     height: 100px;
 }
 
 .zj1 .share {
-    top: 750px;
+    top: 690px;
 }
 
 .nzj .share {
