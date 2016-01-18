@@ -60,7 +60,7 @@ var video = {
 var videoPoster = {
     '2': './wendu_poster.png',
     '3': './guabei_poster.png',
-    '4': './aocao_poster.png',
+    '4': './aocao_poster.png'
 };
 
 
