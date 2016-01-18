@@ -37,7 +37,7 @@ var store = {
                 function (n) {
                     if (video[val]) {
                         $('.d-pic', n)
-                            .append('<video style="position: absolute;" controls width="100%" height="100%" src="' + video[val] + '"></video>')
+                            .append('<video poster="' + videoPoster[val] + '" style="position: absolute;" controls width="100%" height="100%" src="' + video[val] + '"></video>')
                             .css('backgroundImage', 'none');
                     }
                 });
@@ -55,6 +55,12 @@ var video = {
     '2': 'http://xinzhongzhu.ga/publicwangchao/video/wendu.mp4',
     '3': 'http://xinzhongzhu.ga/publicwangchao/video/guabei.mp4',
     '4': 'http://xinzhongzhu.ga/publicwangchao/video/aocao.mp4'
+};
+
+var videoPoster = {
+    '2': './wendu_poster.png',
+    '3': './guabei_poster.png',
+    '4': './aocao_poster.png',
 };
 
 
@@ -266,6 +272,15 @@ $(document).on('touchend', '.s-hint', function () {
 $(document).on('touchend', '.rl-btn', function () {
     $('.rules').toggle();
 });
+
+document.addEventListener('play', function () {
+    document.querySelector('video').style.zIndex = 1;
+}, true);
+
+document.addEventListener('pause', function () {
+    document.querySelector('video').style.zIndex = '';
+}, true);
+
 
 wx.ready(function () {
 
