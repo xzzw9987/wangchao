@@ -285,7 +285,7 @@ document.addEventListener('pause', function () {
 wx.ready(function () {
 
     wx.onMenuShareTimeline({
-        title: '王朝酒业', // 分享标题
+        title: '美酒传奇', // 分享标题
         link: 'http://wx.wine-dynasty.com/mjcq/share.html', // 分享链接
         imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
         success: function () {
@@ -297,8 +297,8 @@ wx.ready(function () {
     });
 
     wx.onMenuShareAppMessage({
-        title: '王朝酒业', // 分享标题
-        desc: '王朝酒业', // 分享描述
+        title: '美酒传奇', // 分享标题
+        desc: '据说只有1%的人全部答对，你敢不敢来挑战？听说福利大大的哟~', // 分享描述
         link: 'http://wx.wine-dynasty.com/mjcq/share.html', // 分享链接
         imgUrl: 'http://wx.wine-dynasty.com/mjcq/fg.jpg', // 分享图标
         type: 'link', // 分享类型,music、video或link，不填默认为link
