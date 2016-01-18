@@ -81,7 +81,7 @@
 	            } else {
 	                p($('[data-pg]', c), $(pgTpl(val, cssTable[val - 1])), function (n) {
 	                    if (video[val]) {
-	                        $('.d-pic', n).append('<video controls width="100%" height="100%" src="' + video[val] + '"></video>').css('backgroundImage', 'none');
+	                        $('.d-pic', n).append('<video style="position: relative;z-index: 1" controls width="100%" height="100%" src="' + video[val] + '"></video>').css('backgroundImage', 'none');
 	                    }
 	                });
 	                this._index = val;
