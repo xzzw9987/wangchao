@@ -155,7 +155,8 @@ html, body {
 }
 
 .ans-content {
-    background: url("./answer-txt.png") no-repeat;
+    background-image: url("./answer-txt.png");
+    background-repeat: no-repeat;
 }
 
 .cv {
