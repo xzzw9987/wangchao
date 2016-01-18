@@ -236,7 +236,7 @@ html, body {
 
 .zj2 {
     background-image: url("./zj2.png");
-    background-position: center 500px;
+    background-position: center 520px;
 
 }
 
@@ -256,6 +256,10 @@ html, body {
     top: 600px;
 }
 
+.zj2 .share {
+    top: 660px;
+}
+
 a[title="站长统计"] {
     display: none;
 }
@@ -267,5 +271,13 @@ a[title="站长统计"] {
 
     .logo {
         top: 110px;
+    }
+
+    .q {
+        top: 506px;
+    }
+
+    .opt {
+        top: 620px;
     }
 }
