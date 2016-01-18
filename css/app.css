@@ -82,7 +82,7 @@ html, body {
 .d-pic, .q, .opt {
     position: absolute;
     top: 160px;
-    left: 70px;
+    left: 52px;
     width: 536px;
     height: 345px;
     background: url("./desc.png") no-repeat;
