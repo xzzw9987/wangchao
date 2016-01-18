@@ -12,6 +12,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    min-height: 960px;
+}
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
