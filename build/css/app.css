@@ -134,7 +134,7 @@ html, body {
 }
 
 .ans {
-    width: 490px;
+    width: 512px;
     height: 340px;
     position: fixed;
     top: 50%;
@@ -147,11 +147,11 @@ html, body {
 
 .ans-0 {
     height: 512px;
-    background-position: -6px 0;
+    background-position: 7px 0;
 }
 
 .ans-1, .ans-2 {
-    background-position: -520px -2px;
+    background-position: -500px -2px;
 }
 
 .ans-content {
