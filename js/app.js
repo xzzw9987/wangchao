@@ -195,7 +195,7 @@ function res(d) {
             return `
                 <div class="z zj1">
                     <div class="logo"></div>
-                    <div style="position: absolute;left: 150px;top: 240px;font-size: 30px;color: #a60006;">
+                    <div style="position: absolute;left: 160px;top: 240px;font-size: 30px;color: #a60006;">
                         中奖编码: ${d.randomCode}
                     </div>
                     <img src="./erweima.png" width="640">
