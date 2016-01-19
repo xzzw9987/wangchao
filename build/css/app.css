@@ -310,4 +310,8 @@ a[title="站长统计"] {
     .opt {
         top: 620px;
     }
+
+    div[data-pg="7"] .opt {
+        top: 640px;
+    }
 }
