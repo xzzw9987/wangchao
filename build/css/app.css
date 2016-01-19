@@ -64,7 +64,7 @@ body {
 
 .c > div {
     position: relative;
-    height: 1088px;
+    height: 100%;
 }
 
 .logo {
@@ -141,7 +141,7 @@ body {
 .ans {
     width: 594px;
     height: 380px;
-    position: fixed;
+    position: absolute;
     bottom: -10px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
@@ -167,7 +167,7 @@ body {
 .cv {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     background: #000000;
