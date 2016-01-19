@@ -273,13 +273,13 @@ $(document).on('touchend', '.rl-btn', function () {
     $('.rules').toggle();
 });
 
-document.addEventListener('play', function () {
+/*document.addEventListener('play', function () {
     document.querySelector('video').style.zIndex = 1;
 }, true);
 
 document.addEventListener('pause', function () {
     document.querySelector('video').style.zIndex = '';
-}, true);
+}, true);*/
 
 
 wx.ready(function () {
