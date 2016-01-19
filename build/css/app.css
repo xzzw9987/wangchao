@@ -142,7 +142,7 @@ body {
     width: 594px;
     height: 380px;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
@@ -294,6 +294,7 @@ a[title="站长统计"] {
     display: none;
 }
 
+/*
 @media screen and (max-height: 959px) {
     .c > div {
         top: -70px;
@@ -311,3 +312,4 @@ a[title="站长统计"] {
         top: 620px;
     }
 }
+*/
