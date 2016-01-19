@@ -37,8 +37,7 @@ var store = {
                 function (n) {
                     if (video[val]) {
                         $('.d-pic', n)
-                            .append('<video poster="' + videoPoster[val] + '" style="position: absolute;" controls width="100%" height="100%" src="' + video[val] + '"></video>')
-                            .css('backgroundImage', 'none');
+                            .append('<video style="position: absolute;" controls width="100%" height="100%" src="' + video[val] + '"></video>');
                     }
                 });
             this._index = val;
@@ -273,13 +272,14 @@ $(document).on('touchend', '.rl-btn', function () {
     $('.rules').toggle();
 });
 
-/*document.addEventListener('play', function () {
-    document.querySelector('video').style.zIndex = 1;
-}, true);
 
-document.addEventListener('pause', function () {
-    document.querySelector('video').style.zIndex = '';
-}, true);*/
+document.addEventListener('play', function (e) {
+    $(e.target).parent('.d-pic').css('backgroundImage', 'none');
+}, true);
+/*
+ document.addEventListener('pause', function () {
+ document.querySelector('video').style.zIndex = '';
+ }, true);*/
 
 
 wx.ready(function () {
