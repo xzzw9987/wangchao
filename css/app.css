@@ -120,7 +120,7 @@ body {
     width: 594px;
     height: 380px;
     position: fixed;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%, 0);
     background: url("./answer-bg.png") no-repeat;
