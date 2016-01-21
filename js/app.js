@@ -213,7 +213,7 @@ function res(d) {
                 <div class="z zj2 ">
                     <div class="logo"></div>
                     <div style="position: absolute;left: 120px;top: 220px;font-size: 30px;color: #a60006;">
-                        恭喜${d.size}元红包已存入账户!
+                        恭喜获得${d.size}元红包一个!
                     </div>
                     <img src="./erweima.png" width="640">
                     <div class="share"></div>
