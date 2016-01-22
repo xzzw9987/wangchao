@@ -58,7 +58,7 @@ body {
     width: 640px;
     height: 100%;
     overflow: hidden;
-    background: url("http://xinzhongzhu.com/publicwangchao/bg.jpg") 0 0;
+    background: url("./bg.jpg") 0 0;
     background-size: 100% 100%;
 }
 
@@ -74,11 +74,11 @@ body {
     margin-left: -95px;
     width: 190px;
     height: 40px;
-    background: url("http://xinzhongzhu.com/publicwangchao/logo.png") no-repeat;
+    background: url("./logo.png") no-repeat;
 }
 
 [data-pg="0"] {
-    background: url("http://xinzhongzhu.com/publicwangchao/index.png") no-repeat;
+    background: url("./index.png") no-repeat;
     background-size: 100% auto;
     background-position: 0 -146px;
 }
@@ -108,7 +108,7 @@ body {
     left: 52px;
     width: 536px;
     height: 345px;
-    background: url("http://xinzhongzhu.com/publicwangchao/desc.png") no-repeat;
+    background: url("./desc.png") no-repeat;
 }
 
 .c .in {
@@ -135,7 +135,7 @@ body {
     top: 660px;
     left: 60px;
     height: 270px;
-    background: url("http://xinzhongzhu.com/publicwangchao/options.png") no-repeat 0 -220px;
+    background: url("./options.png") no-repeat 0 -220px;
 }
 
 .ans {
@@ -146,7 +146,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    background: url("http://xinzhongzhu.com/publicwangchao/answer-bg.png") no-repeat;
+    background: url("./answer-bg.png") no-repeat;
     z-index: 1000;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 .ans-content {
-    background-image: url("http://xinzhongzhu.com/publicwangchao/answer-txt.png");
+    background-image: url("./answer-txt.png");
     background-repeat: no-repeat;
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 .ed {
-    background: url("http://xinzhongzhu.com/publicwangchao/ed.png") center 150px no-repeat
+    background: url("./ed.png") center 150px no-repeat
 }
 
 .ed-cj {
@@ -236,7 +236,7 @@ body {
 }
 
 .form {
-    background: url("http://xinzhongzhu.com/publicwangchao/submit.png") no-repeat center 260px
+    background: url("./submit.png") no-repeat center 260px
 }
 
 .form input {
