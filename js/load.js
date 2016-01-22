@@ -14,7 +14,7 @@ function load(t) {
         $('.percent').text(t + '%');
         loadTimeout = setTimeout(function () {
             load(t + 3);
-        }, 100);
+        }, 200);
     }
 }
 
